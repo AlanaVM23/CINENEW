@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icons8-filme-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_titulo">
+            <h1 class="cabecalho_titulo_texto">CINEVI</h1>
+        </div>
+        <div class="cabecalho_btn">
+            <button class="cabecalho_btn-home">Home</button>
+            <button class="cabecalho_btn-novo">Novo filme</button>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="lista ocultar">
+            <h2 class="lista_titulo">Catalogo de Filmes</h2>
+            <div class="lista_generos">
+                <H3 class="lista_generos_texto">AÇÃO</h3>
+                <div class="lista_catalogo acao">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/indiana.jpg" alt="poster indiana jones">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Indiana Jones</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/vinga.jpg" alt="poster vingadores">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Vingadores</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/dead e wolf.webp" alt="poster deadpool e wolverine">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Deadpool e Wolverine</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/casa branca.jpg" alt="poster invasão a casa branca">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Invasão a Casa Branca</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/jonh.jpg" alt="poster jonh wick">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Jonh Wick</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/mi6.jpg" alt="poster missão impossivel">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Missão Impossivel</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/merce.jpg" alt="poster mercenarios">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Mercenarios</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/rota.jpg" alt="poster rota de fuga">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Rota de Fuga</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="acao"></div>
+                </div>
+            <div class="lista_generos ficcao">
+                <h3 class="lista_generos_texto">FICÇÃO</h3>
+                <div class="lista_catalogo" id="Ficção">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/oz.jpg" alt="poster magico de oz">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">O Magico de Oz</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/jurassic.jpg" alt="poster jurassic park">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Jurassic Word</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/marte.webp" alt="poster perdido em marte">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Perdido em Marte</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/jumanji.jpg" alt="poster jumanji">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Jumanji</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="ficcao"></div>
+                </div>
+            </div>
+            <div class="lista_generos fantasia">
+                <h3 class="lista_generos_texto">FANTASIA</h3>
+                <div class="lista_catalogo" id="Fantasia">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/LOR.jpg" alt="poster senhor dos aneis">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">O Senhor dos Aneis</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/HP.jpg" alt="poster harry potter">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Harry Potter</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="fantasia"></div>
+                </div>
+            </div>
+            <div class="lista_generos drama">
+                <h3 class="lista_generos_texto">DRAMA</h3>
+                <div class="lista_catalogo" id="Drama">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/conde.jpg" alt="poster O Conde de Monte Cristo">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">O Conde de Monte Cristo</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/espera.jpg" alt="poster espera de um milagre">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">A Espera de um Milagre</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="drama"></div>
+                </div>
+            </div>
+            <div class="lista_generos animacao">
+                <h3 class="lista_generos_texto" id="Animação">ANIMAÇÃO</h3>
+                <div class="lista_catalogo">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/rei.jpg" alt="poster rei leão">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">O Rei Leão</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/viva.jpg" alt="poster viva a vida é uma festa">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Viva: a Vida é uma Festa</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="animacao"></div>
+                </div>
+            </div>
+            <div class="lista_generos comedia">
+                <h3 class="lista_generos">COMÉDIA</h3>
+                <div class="lista_catalogo" id="Comédia">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/gente.jpg" alt="poster gente grande">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Gente Grande</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/panico.jpg" alt="poster todo mundo em panico">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Todo Mundo em Pánico</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="comedia"></div>
+                </div>
+            </div>
+            <div class="lista_generos terror">
+                <h3 class="lista_generos_texto">TERROR</h3>
+                <div class="lista_catalogo" id="Terror">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/invocação.jpg" alt="poster Invocação do Mal">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Invocação do Mal</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="terror"></div>
+                </div>
+            </div>
+            <div class="lista_generos romance">
+                <h3 class="lista_generos_texto" >ROMANCE</h3>
+                <div class="lista_catalogo" id="romance">
+                    <div class="lista_catalogo_cards">
+                        <img class="lista_cards_img" src="img/antes.jpg" alt="poster como eu era antes de vc">
+                        <div class="lista_cards_campo">
+                            <p class="lista_cards_texto">Como eu era Antes de V0cê</p>
+                            <div class="lista_cards_campo_btns">
+                                <button class="lista_cards_campo_excluir" alt="lixo">Excluir</button>
+                                <button class="lista_cards_campo_editar" alt="lixo">Editar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogo_filmes" id="romance"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario ocultar">
+            <h2 class="formulario_titulo">Adicionar Filmes:</h2>
+            <section class="formulario_secoes">
+                <form id="card-form">
+                    <div class="formulario_secoes_campos">
+                        <input class="formulario_secoes_campos_input" type="text" id="movie-title" placeholder="Insira nome do filme" required>
+                    </div>
+                    <div class="formulario_secoes_campos">
+                        <select id="movie-gender" class="formulario_secoes_campos_input" name="movie-gender" required>
+                            <option value="">Selecione o gênero</option>
+                            <option value="acao">Ação</option>
+                            <option value="fantasia">Fantasia</option>
+                            <option value="ficcao">Ficção</option>
+                            <option value="comedia">Comédia</option>
+                            <option value="drama">Drama</option>
+                            <option value="terror">Terror</option>
+                            <option value="romance">Romance</option>
+                            <option value="animacao">Animação</option>
+                        </select>                        
+                    </div>
+                    <div class="formulario_secoes_campos">
+                        <input type="file" id="file-input" class="enviar_img" accept="image/*" required>
+                        <label for="file-input" class="campo_imagem">Escolher imagem</label>
+                    </div>
+                    <div class="formulario_secoes_btn">
+                        <button type="submit" class="btn_form">Criar Card</button>
+                    </div>
+                </form>
+            </section>            
+        </section>
+    </main>
+
+    <!-- <section class="overlay oculto">
+        <section class="moden_conteudo">
+            <form id="moden_form">
+                <div class="formulario_secoes_campos">
+                    <input class="formulario_secoes_campos_input" type="text" id="movie-title" placeholder="Insira nome do filme" required>
+                </div>
+                <div class="formulario_secoes_campos">
+                    <select id="movie-gender" class="formulario_secoes_campos_input" name="movie-gender" required>
+                        <option value="">Selecione o gênero</option>
+                        <option value="acao">Ação</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="ficcao">Ficção</option>
+                        <option value="comedia">Comédia</option>
+                        <option value="drama">Drama</option>
+                        <option value="terror">Terror</option>
+                        <option value="romance">Romance</option>
+                        <option value="animacao">Animação</option>
+                    </select>                        
+                </div>
+                <div class="formulario_secoes_campos">
+                    <input type="file" id="file-input" class="enviar_img" accept="image/*" required>
+                    <label for="file-input" class="campo_imagem">Escolher imagem</label>
+                </div>
+                <div class="formulario_secoes_btn">
+                    <button type="submit" class="btn_form">Mudar</button>
+                </div>
+            </form>
+            <button class="modem_fechar">Fechar Pop-Up</button>
+        </section>
+    </section> -->
+
+
+    <footer class="rodape">
+        <h1 class="rodape_texto">Desenvolvido por Alana Ventura Maróstica</h1>
+        <h2 class="rodape_data">2025</h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
